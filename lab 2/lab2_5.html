@@ -6,13 +6,60 @@
 <body>
 <form action="#">
     <h2>Форма для регистрации</h2>
+<label for="email" >E-mail</label>
+ <input type="email" id="email" name="st_email" ><br>
 
-<p>E-mail <input type="email" id="name" name="st_email"></p>
-<p>Пароль <input type="password" id="name" name="st_password"></p>
-<p>Пол <input type="" id="name" name="st_email"></p>
-<p>Год рождения </p>
-<p>Я знаю</p>
-Обо мне
+ <p><label for="password">Пароль</label>
+ <input type="password" id="name" name="st_password"></p>
+
+ <p><label>Пол</label>
+ <label><input type="radio" id="mg" name="st_mg" >Мужчина</label>
+ <label><input type="radio" id="mg1" name="st_mg" >Женщина</label></p>
+<p><label>Год рождения</label>
+<select name="year" id="year">
+    <option value="1981">1981</option>
+    <option value="1981">1982</option>
+    <option value="1981">1983</option>
+    <option value="1981">1984</option>
+    <option value="1981">1985</option>
+    <option value="1981">1986</option>
+    <option value="1981">1987</option>
+    <option value="1981">1988</option>
+    <option value="1981">1989</option>
+    <option value="1981">1990</option>
+    <option value="1981">1991</option>
+    <option value="1981">1992</option>
+    <option value="1981">1993</option>
+    <option value="1981">1994</option>
+    <option value="1981">1995</option>
+    <option value="1981">1996</option>
+    <option value="1981">1997</option>
+    <option value="1981">1998</option>
+    <option value="1981">1999</option>
+    <option value="1981">2000</option>
+    <option value="1981">2001</option>
+    <option value="1981">2002</option>
+    <option value="1981">2003</option>
+    <option value="1981">2004</option>
+
+</select>
+
+<p>
+<label>Я знаю</label><br>
+<input type="checkbox" id="language" name="st_language">
+<label >Руссикй</label><br>
+<input type="checkbox" id="language" name="st_language"><label >Испанский</label><br>
+<input type="checkbox" id="language" name="st_language"><label >Немецкий</label><br>
+<input type="checkbox" id="language" name="st_language"><label >Английский</label><br>
+<input type="checkbox" id="language" name="st_language"><label >Китайский</label><br>
+</p>
+
+<p>
+<label for="bio">Обо мне</label>
+<textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+</p>
+<button type="submit"> Готово</button>
+<button type="reset"> Очистить</button>
 </form>
 </body>
 </html>
