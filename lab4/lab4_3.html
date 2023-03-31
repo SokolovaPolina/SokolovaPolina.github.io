@@ -11,63 +11,57 @@
 			}
 			
 			.menu {
-				margin: 10px;
                 padding: 5px;
 				width: 220px;
-				background-image: #fff;
+				background: #fff;
 				
 			}
 			
 			.menu ul {
-			    /*margin: 10px;
-                padding: 20px;
-                width: 220px;
-				background: url(css_sprites\ \(1\).png) no-repeat;
-				background-position: -10px -10px;
-				float: left;*/
+			    position: relative;
+				list-style: none;
 		
 			}
 			.menu li {
-				
+				list-style: none;
 					
 				}
-			
-			
+			.menu li:before {
+				width: 4px;
+				background: url(css_sprites\ \(1\).png) -10px -10px no-repeat;
+				content: '';
+				height: 14px;	
+				width: 15px;
+				left: 20px;
+				position: absolute;
+				}
 			
 			
 			.menu li a {
 				color: rgb(42, 74, 170);
-				
-              
-					
+			
 			}
 			
 			.menu li a:hover {
 				color: #6067e4;
-			
 				
-                
-					
 			}
+
 			
 			.menu li ul {
-				margin: 10px;
-                padding: 20px;
-                width: 220px;
-				background: url(css_sprites\ \(1\).png) no-repeat;
-				background-position: -10px -10px;
-				float: left;
+				margin-bottom: 12px;
 				
 			}
-			.menu li li {
-				margin: 0 10px 25px 0;
-                padding: 20px;
-				width: 220px; 
-			    background: url(css_sprites\ \(1\).png) no-repeat;
+			.menu li li:before {
 				background-position: -46px -10px;
-				float: left;
+                left: 20px;
+                margin-left: -20px;
 					
 				}
+			.menu li li { 
+                margin-left: -20px;
+					
+			}
 			
 			
 	</style>
