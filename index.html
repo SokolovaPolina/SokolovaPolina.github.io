@@ -7,69 +7,32 @@
     <title>Document</title>
     <style>
 
-    .clearfix::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    #container{
-        background: #ffffff;
-        width: 800px;
-        height: 400px;
-        margin: auto auto;
-        border: 10px solid #ffffff;
-        
-    }
-    #header{
-        background: #adcdfc;
-        height: 100px;
-        border: 10px solid #ffffff;
-        
-    }
-    #left{
-        background-image: url(left.png);
-        float: left;
-        height: 180px;
-        width: 200px;
-        border: 10px solid #ffffff;
-        
-    
-    }
-    #right{
-        background-image: url(right.png);
-        float: right;
-        height: 180px;
-        width: 200px;
-        border: 10px solid #ffffff;
-        
-    
-    }
-    #center{
-        width: 600px;
-        background: #ffffff;
-        border: 10px solid #ffffff;
-        margin: 0 200px;
-    
-    }
-    #footer{
-        background: #c4b7f8;
-        height: 100px;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-    }
-    
+        #left{
+            background:rgb(230, 230, 252);
+            width: 600px;
+            float: left;
+            min-height: 500px;
+            margin-top: none;
+            margin-right: 20px;
+            
+        }
+        #right{
+            background:rgb(255, 237, 237);
+            width: 600px;
+            min-height: 1000px;
+            margin-left: 40%;
+            margin-top: none;
+        }
+        ol {
+            list-style-type: none;
+        }
+             
+    </style>
 
-</style>
 </head>
 <body>
-    <title>Web - разработка и дизайн </title>
-</head>
-<body>
-    
-    <h1> Лабораторные работы </h1>
+    <div id = "left">
+    <h1> Лабораторные работы по HTML</h1>
     <h2> Лабораторная работа №1 </h2>
     <ol>
         <li> <a href="lab1/lab1_1.html"> Задание 1 </a></li>
@@ -119,5 +82,18 @@
     <ol>
         <li> <a href="lab7/lab7_1.html"> Задание 1 </a></li>
     </ol>
+</div>
+<div id = "right">
+    <h1> Лабораторные работы по JavaScript</h1>
+    <h2> Лабораторная работа №1 </h2>
+    <ol>
+    <li> <a href="java_script/lab1/laba1_1.html"> Задание 1 </a></li>
+        <li><a href="java_script/lab1/laba1_2_1.html">Задание 2.1</a></li>
+        <li><a href="java_script/lab1/laba1_2_2.html">Задание 2.2</a></li>
+        <li><a href="java_script/lab1/laba1_3.html">Задание 3</a></li>
+        <li><a href="java_script/lab1/laba1_4.html">Задание 4</a></li>
+        <li><a href="java_script/lab1/laba1_5.html">Задание 5</a></li>
+    </ol>
+</div>
 </body>
 </html>
