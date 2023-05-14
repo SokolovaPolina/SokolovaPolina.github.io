@@ -12,12 +12,27 @@
     //    var n = 6;
     //     let animals = ['dog', 'dog', 'dog', 'cat', 'cat']
     //     console.log(animals)
-    let n = prompt("Введите число: ")
-        var foo = {baz: "dog", goo: "cat"};
-console.log(
-     "%s theory is %d %s concept. I can only describe it as %s and %s",
-      "string", 1, foo.goo, bar, foo.baz 
-);
+    let n = 8;
+    let k = 0;
+    let el1 = "dog dog dog cat cat dog";
+    let el2 ="dog dog cat cat dog dog";
+    let el3 ="dog cat cat dog dog dog ";
+    let el4 ="cat cat dog dog dog dog";
+    let el5 ="cat dog dog dog dog cat ";
+    var str = [el1, el2, el3, el4, el5];
+    for (let i = 0; i < 5; i++) {
+        console.log(str[i]);
+        k++;
+        console.log(k,n);
+        if(k > n){
+            i = 0; 
+        }
+        
+        }
+
+
+   
+
     </script>
     
 </body>
