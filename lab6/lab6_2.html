@@ -12,16 +12,23 @@
         display: table;
         clear: both;
     }
-    
+    html,body {
+	    height: 100%;
+    }
+
+    #wrapper {
+        position: relative;
+        min-height: 100%;
+        width: 800px;
+        /* height: 400px; */
+        margin: 0 auto;
+    }
     #container{
         background: #ffffff;
-        width: 800px;
-        height: 400px;
-        min-height: 100%;
-        margin: auto auto;
-        border: 10px solid #ffffff;
-        padding-bottom: 50px;
-        position: relative;
+        /* min-height: 100%; */
+        /* border: 10px solid #ffffff; */
+        padding-bottom: 90px;
+        
     
         
     }
@@ -57,10 +64,10 @@
     
     }
     #footer{
-        background: #c4b7f8;
-        height: 100px;
-        width: 100%;
         position: absolute;
+        background: #c4b7f8;
+        height: 80px;
+        width: 100%;
         left: 0;
         bottom: 0;
     
@@ -71,7 +78,9 @@
     </style>
     </head>
     <body>
-    <div id="container">
+    
+     <div id = "wrapper" >
+        <div id="container">
         <div id="header"></div>
         <div id="outer">
             <div id="inner">
@@ -87,6 +96,7 @@
                 <div id="end" class="clearfix"></div>
             </div>
         </div>
+     </div>
         <div id="footer"></div>
     </div>
     </body>
