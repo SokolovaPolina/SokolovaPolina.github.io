@@ -12,21 +12,15 @@
     //    var n = 6;
     //     let animals = ['dog', 'dog', 'dog', 'cat', 'cat']
     //     console.log(animals)
-    let n = 8;
-    let k = 0;
+    let n = prompt("Введите целое число строк");8
     let el1 = "dog dog dog cat cat dog";
     let el2 ="dog dog cat cat dog dog";
     let el3 ="dog cat cat dog dog dog ";
     let el4 ="cat cat dog dog dog dog";
     let el5 ="cat dog dog dog dog cat ";
     var str = [el1, el2, el3, el4, el5];
-    for (let i = 0; i < 5; i++) {
-        console.log(str[i]);
-        k++;
-        console.log(k,n);
-        if(k > n){
-            i = 0; 
-        }
+    for (let i = 0; i < n; i++) {
+        console.log(str[i%5]);
         
         }
 
