@@ -23,11 +23,60 @@ function pow(x, n) {
     }
     return sum;
   }
+  /**
+ * Возвращает  факториал числа n!, используя рекурсивный вызов n!= n*(n-1)!.
+ *
+ * @param {number} n Вводимое число.
+ * @return {number} sum, значение должно иметь тип BigInt.
+ */
   function factorial(n) {
-    if (n <= 1) {
-        return 1;
+    let res = BigInt(1);
+    if (n == 0n || n == 1n) {
+        return 1n;
     } else {
-        res = n * factorial(n - 1);
+        res = n * factorial(n - 1n);
+        return res;
     }
     
   }
+  /**
+ * Возвращает n-е число Фибоначчи.
+ *
+ * @param {number} n Вводимое число.
+ * @return {number} sum, n-е число Фибоначчи.
+ */
+  function fib(n) {
+    let a = 1n;
+  let b = 1n;
+  if (n == 0n){
+    return 0n;
+  } else{
+    for (let i = 3n; i <= n; i++) {
+      let c = a + b;
+      a = b;
+      b = c;
+    }
+    return b;
+  }
+  
+}
+// function compare(x){
+//   return function (y);
+//   if(y > x) {
+//     return true;
+//   } else if (y < x){ 
+//     return false;
+//   } else if (y == x){
+//     return 0;
+//   } else {
+//     return alert("ошибка");
+//   }
+//   }
+function sum() {
+  var result = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    result += arguments[i];
+  }
+
+  return result;
+}
