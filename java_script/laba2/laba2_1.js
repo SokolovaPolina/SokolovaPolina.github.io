@@ -64,7 +64,7 @@ function fib(n) {
  * Принимает целочисленное значение x и возвращает анонимную функцию
  *
  * @param {number} x целочисленное значение.
- * @return {number} у, возвращает анонимную функцию.
+ * @return {boolean} у, возвращает анонимную функцию.
  */
 function compare(x) {
   return function (y) {
