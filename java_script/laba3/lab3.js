@@ -38,3 +38,33 @@ function checkSpam(str){
    let strNew1 = str.toUpperCase();
   return strNew.includes("xxx") || strNew.includes("viagra") || strNew1.includes("XXX") || strNew1.includes("VIAGRA") ;
 }
+/**
+* проверяет длину строки str, и если она превосходит maxlength – заменяет конец str на символ многоточие "…", так чтобы ее длина стала равна maxlength.
+*
+* @param {string} str Вводимая строка.
+* @param {number} maxlength вводимая максимальная длина строки.
+* @param {string} strNew новая усеченная строка.
+* @return {string} strNew str, результатом функции должна быть (при необходимости) усечённая строка
+*/
+function truncate(str, maxlength){
+   if(str.length > maxlength){
+      strNew = str.slice(0, maxlength-1) + '…';
+      return strNew;
+   } else return str;
+}
+/**
+* преобразуйте строку вида 'var-test-text' в 'varTestText'
+*
+* @param {string} str Вводимая строка.
+* @param {number} maxlength вводимая максимальная длина строки.
+* @param {string} strNew новая усеченная строка.
+* @return {string} strNew str, результатом функции должна быть (при необходимости) усечённая строка
+*/
+function camelize(str){
+   let target = "-";
+   let pos = -1;
+   while((pos = str.indexOf(target, pos + 1)) != -1){
+      strNew = str ;
+   }
+
+}
