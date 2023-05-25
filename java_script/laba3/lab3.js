@@ -1,17 +1,18 @@
+import { fib } from "./laba2.js";
 /**
 * Возвращает дробную часть числа num.
 *
 * @param {number} num Вводимое десятичное число.
 * @return {number} sum, возвращает дробную часть числа.
 */
-function getDecimal(num){
+export function getDecimal(num){
    let res = 0;
    if (num >= 0) {
       let cel = Math.trunc(num);
       res = num - cel;
       return Math.floor(res * 100) / 100; 
    } else {
-      cel = Math.floor(num);
+     let cel = Math.floor(num);
       return num - cel;
    }
 }
@@ -21,7 +22,7 @@ function getDecimal(num){
 * @param {string} str Вводимая строка.
 * @return {string} str, возвращает строку str с заглавным первым символом.
 */
-function ucFirst(str){
+export function ucFirst(str){
    if (!str) return str;
    else return str[0].toUpperCase() + str.slice(1);
 }
@@ -33,7 +34,7 @@ function ucFirst(str){
 * @param {string} strNew1 перевод строки в верхний регистр.
 * @return {string} strNew strNew1, возвращает true, если строка str содержит 'viagra' или 'XXX', а иначе false
 */
-function checkSpam(str){
+export function checkSpam(str){
    let strNew = str.toLowerCase();
    let strNew1 = str.toUpperCase();
   return strNew.includes("xxx") || strNew.includes("viagra") || strNew1.includes("XXX") || strNew1.includes("VIAGRA") ;
@@ -46,9 +47,9 @@ function checkSpam(str){
 * @param {string} strNew новая усеченная строка.
 * @return {string} strNew str, результатом функции должна быть (при необходимости) усечённая строка
 */
-function truncate(str, maxlength){
+export function truncate(str, maxlength){
    if(str.length > maxlength){
-      strNew = str.slice(0, maxlength-1) + '…';
+      let strNew = str.slice(0, maxlength-1) + '…';
       return strNew;
    } else return str;
 }
@@ -59,9 +60,10 @@ function truncate(str, maxlength){
 * @param {Array} strArr полученный список из строки, сформированный по разделителю "-".
 * @return {string} strNew, новая строка
 */
-function camelize(str){
+export function camelize(str){
    //let str = "fgcf-gjdt-cg";
    let strArr = str.split("-");
+   let strNew = ""
      for (let i = 0; i <= strArr.length - 1; i++){
       if (i == 0) {
          strNew = strArr[0];
@@ -77,7 +79,7 @@ function camelize(str){
 * @param {array} arr, пустой массив
 * @return {array} arr, массив, заполненный числами Фибоначчи до n-го (не включая его)
 */
-function fibs(n) {
+export function fibs(n) {
    let arr = [];
    for (let i = 0; i < n; i++){
       arr.push(fib(i));
@@ -90,7 +92,7 @@ function fibs(n) {
 * @return {array} arr, массив, упорядоченный по убыванию
 */
 
-function arrReverseSorted(arr) {
+export function arrReverseSorted(arr) {
    /**
 *  упорядочение по убыванию
 *
@@ -113,7 +115,7 @@ function arrReverseSorted(arr) {
 * @param {array} arr, пустой массив
 * @return {array} arr, массив уникальных значений
 */
-function unique(arr) {
+export function unique(arr) {
    return Array.from(new Set(arr));
 }
 
