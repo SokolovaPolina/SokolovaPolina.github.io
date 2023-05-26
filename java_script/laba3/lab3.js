@@ -88,8 +88,8 @@ export function fibs(n) {
 /**
 * принимает неупорядоченный массив чисел arr и возвращает массив, упорядоченный по убыванию
 *
-* @param {array} arr, неупорядоченный массив чисел
-* @return {array} arr, массив, упорядоченный по убыванию
+* @param {Array} arr, неупорядоченный массив чисел
+* @return {Array} arr, массив, упорядоченный по убыванию
 */
 
 export function arrReverseSorted(arr) {
