@@ -12,13 +12,43 @@
     let obj = {
 	className: 'open menu'
     }
-    function addClass(cls){
-    let arr = this.className.split(" ");
-    // console.log(arr);
-    if (obj.hasOwnProperty == false) return this;
-    else return arr.push(cls);
-    } 
-console.log(addClass("open"))
+/**
+* добавляет в список класс cls,но только если его там еще нет
+*
+* @param {number} cls, класс.
+* @return {number} obj.className, список классов.
+*/
+ obj.addClass = function addClass(cls) {
+        let subObj = {};
+        let arr = this.className.split(" ");
+        for(let i = 0; i < arr.length; i++){
+            subObj[arr[i]] = true;s
+        }
+        subObj[cls] = true;
+        arr = Object.keys(subObj);        
+        this.className = arr.join(" ");
+    }
+    obj.addClass("desk");// добавит в className
+    console.log(obj.className);
+    obj.addClass("open"); // оставит таким же
+    console.log(obj.className);
+ obj.removeClass = function removeClass(cls) {
+    let subObj = {};
+        let arr = this.className.split(" ");
+        for(let i = 0; i < arr.length; i++){
+                if(arr[i] == cls){
+                    arr.splice(i, 1);
+                    i-- ;
+                }
+            }
+            this.className = arr.join(' ');
+       
+ }
+    obj.removeClass('menu');
+    console.log(obj.className);
+
+
+
     </script>
 </body>
 </html>
