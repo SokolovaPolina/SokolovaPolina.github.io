@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Text</title>
+</head>
+<body>
+	<input type="button" id="hider" value="Спрятать текст">
+
+	<div id="text" class="hideText">Текст</div>
+
+	<script>
+        hider.onclick = function hide(){
+			text.classList.toggle('hideText');
+            this.innerHTML.indexOf('Спрятать ') >-1 ? this.innerHTML="Показать текст":
+            innerHTML = "Спрятать текст";
+        }
+	</script>
+</body>
+</html>
