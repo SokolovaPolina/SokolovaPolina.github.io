@@ -10,11 +10,28 @@
 	<div id="text" class="hideText">Текст</div>
 
 	<script>
-        hider.onclick = function hide(){
-			text.classList.toggle('hideText');
-            this.innerHTML.indexOf('Спрятать ') >-1 ? this.innerHTML="Показать текст":
-            innerHTML = "Спрятать текст";
-        }
+		document.getElementById('hider').onclick = function() {
+    this.textContent = 'Показать';
+}
+console.log(document.getElementById('hider'))
+        // hider.onclick = function hide(){
+		// 	text.classList.toggle('hideText');
+        //     this.innerHTML.indexOf('Спрятать ') >-1 ? this.innerHTML="Показать текст":
+        //     innerHTML = "Спрятать текст";
+        // }
+// 		$(document).ready(function(){
+// 	$('.content_toggle').click(function(){
+// 		$('.content_block').slideToggle(300, function(){
+// 			if ($(this).is(':hidden')) {
+// 				$('.content_toggle').html('Показать текст');
+// 			} else {
+// 				$('.content_toggle').html('Скрыть текст');
+// 			}							
+// 		});
+// 		return false;
+// 	});
+// });
+	
 	</script>
 </body>
 </html>
