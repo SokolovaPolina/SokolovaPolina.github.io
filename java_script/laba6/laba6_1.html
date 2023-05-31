@@ -6,11 +6,19 @@
 	<title>Text</title>
 </head>
 <body>
-	<input type="button" id="hider" onclick="hide('text')" value="Спрятать текст">
+	<input type="button" id="hider" value="Спрятать текст">
 
-	<div id="text" >Текст</div>
+	<div id="text">Текст</div>
 
-	<script src="test.js">
+	<script>
+		document.getElementById('hider').onclick = function(){
+			if (document.getElementById('text').style.display == 'none') {
+				document.getElementById('text').style.display = 'block';
+			} else {
+				document.getElementById('text').style.display = 'none';
+				document.getElementById('hider').innerHTML = 'Показать текст';
+			}
+    }
 	</script>
 </body>
 </html>
