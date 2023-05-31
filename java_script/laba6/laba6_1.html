@@ -14,9 +14,10 @@
 		document.getElementById('hider').onclick = function(){
 			if (document.getElementById('text').style.display == 'none') {
 				document.getElementById('text').style.display = 'block';
+				document.getElementById('hider').value = 'Спрятать текст';
 			} else {
 				document.getElementById('text').style.display = 'none';
-				document.getElementById('hider').innerHTML = 'Показать текст';
+				document.getElementById('hider').value = 'Показать текст';
 			}
     }
 	</script>
