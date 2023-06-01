@@ -7,4 +7,5 @@ let people = [ vasya , masha , vova ];
     if (a == b) return 0;
     if (a < b) return -1;
   }
- people.sort(ageSort);
+  
+    console.log(people.sort(ageSort))
