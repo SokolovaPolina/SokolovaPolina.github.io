@@ -15,6 +15,7 @@
         arr.push(cls)
     }
     this.className = arr.join(" ");
+    return this;
     }
 
     obj.addClass("desk");// добавит в className desk
@@ -37,6 +38,7 @@
                 }
             }
             obj.className = arr.join(' ');
+            return this;
        
  }
     obj.removeClass('menu'); // удалит menu
