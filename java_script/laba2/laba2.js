@@ -82,8 +82,8 @@ function compare(x) {
  * @return {...values: number[]} result, сумму всех своих аргументов.
  */
 function sum() {
-  var result = 0;
-  for (var i = 0; i < arguments.length; i++) {
+  let result = 0;
+  for (let i = 0; i < arguments.length; i++) {
     result += arguments[i];
   }
 
