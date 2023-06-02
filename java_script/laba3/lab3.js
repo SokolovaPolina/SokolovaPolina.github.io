@@ -110,8 +110,7 @@ export function arrReverseSorted(arr) {
 /**
 *  возвращает массив уникальных, не повторяющихся значений массива arr
 *
-* @param {any} arr,зЗначения в массиве могут быть любого типа
-* @param {array} arr, пустой массив
+* @param {array} arr,зЗначения в массиве могут быть любого типа
 * @return {array} arr, массив уникальных значений
 */
 export function unique(arr) {
