@@ -27,15 +27,13 @@ function sumTo(n) {
 * Возвращает  факториал числа n!, используя рекурсивный вызов n!= n*(n-1)!.
 *
 * @param {number} n Вводимое число.
-* @return {number} res, значение должно иметь тип BigInt.
+* @return {BigInt} n!
 */
 function factorial(n) {
-  let res = 0n;
   if (n == 0n || n == 1n) {
     return 1n;
   } else {
-    res = BigInt(n) * BigInt(factorial(n - 1));
-    return res;
+    return BigInt(n) * BigInt(factorial(n - 1));
   }
 
 }
