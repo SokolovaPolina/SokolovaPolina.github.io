@@ -36,8 +36,7 @@ export function ucFirst(str){
 */
 export function checkSpam(str){
    let strNew = str.toLowerCase();
-   let strNew1 = str.toUpperCase();
-  return strNew.includes("xxx") || strNew.includes("viagra") || strNew1.includes("XXX") || strNew1.includes("VIAGRA") ;
+  return strNew.includes("xxx") || strNew.includes("viagra");
 }
 /**
 * проверяет длину строки str, и если она превосходит maxlength – заменяет конец str на символ многоточие "…", так чтобы ее длина стала равна maxlength.
