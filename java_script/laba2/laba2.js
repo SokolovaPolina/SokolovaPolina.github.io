@@ -41,7 +41,7 @@ function factorial(n) {
 * Возвращает n-е число Фибоначчи.
 *
 * @param {number} n Вводимое число.
-* @return {number} sum, n-е число Фибоначчи.
+* @return {BigInt} sum, n-е число Фибоначчи.
 */
 function fib(n) {
   let a = 1n;
@@ -62,7 +62,7 @@ function fib(n) {
  * Принимает целочисленное значение x и возвращает анонимную функцию
  *
  * @param {number} x целочисленное значение.
- * @return {boolean} у, возвращает анонимную функцию.
+ * @return {function} функция сравнния у с х, которая возвращает true, false or null
  */
 function compare(x) {
   return function (y) {
@@ -79,7 +79,7 @@ function compare(x) {
  * Возвращает сумму всех своих аргументов.
  *
  * @param {number} () принимаемые значения.
- * @return {number} result, сумму всех своих аргументов.
+ * @return {...values: number[]} result, сумму всех своих аргументов.
  */
 function sum() {
   var result = 0;
