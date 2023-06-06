@@ -5,29 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> плейсхолдер-подсказкa</title>
+    <title>pl</title>
     <style>
-        [contenteditable]:empty:before {
-            content: attr(data-placeholder);
-            color: rgb(26, 128, 217);
-            display: inline-block;
+        ::placeholder {
+            color: #66F;
         }
     </style>
 </head>
 
 <body>
-    <div class = "placeholder" contenteditable="true" data-placeholder="Вставьте текст" style="border: 1px solid; width: 180px"></div>
-    
-   <script>
-        
-        function newAtt() {
-            let el = document.getElementById("login");
-            el.placeholder = "newAttr";
-            //  document.getElementById('login').placeholder = el.dataset.placeholder;
-        };
+    <div id="texfield">
+        <label for="sss"></label>
+        <input type="text" data-placeholder="Введите строку" />
+    </div>
+
+    <script>
+        'use strict';
+        let tf = document.getElementById("texfield");
+
+        let input = tf.getElementsByTagName("input")[0];
+        let lb = tf.getElementsByTagName("label")[0];
+        lb.style.display = "none";
+
+        input.setAttribute("placeholder", input.dataset.placeholder);
+        lb.innerHTML = input.dataset.placeholder;
+
+        input.addEventListener("focus", function () {
+            lb.style.display = "block";
+            input.setAttribute("placeholder", "");
+        });
+
+        input.addEventListener("blur", function () {
+
+            lb.style.display = "none";
+            input.setAttribute("placeholder", input.dataset.placeholder);
+
+        });
+
     </script>
-
-
 </body>
 
 </html>
