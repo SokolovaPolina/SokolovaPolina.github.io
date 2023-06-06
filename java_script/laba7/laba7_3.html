@@ -10,34 +10,34 @@
 
 <body>
     <textarea id="area" autofocus></textarea>
-    <div id="view"></div>
+    <div id="divv"></div>
 
 
     <script>
-
+        "use strict";
         area.hidden = true;
-/**
-* Проверка нажатия клавиш
-*
-* @param {} нажатая клавиша.
-* @return {} превращения div 
-*/
+        /**
+        * Проверка нажатия клавиш
+        *
+        * @param {} нажатая клавиша.
+        * @return {} превращения div 
+        */
         document.onkeydown = function (e) {
             if (e.ctrlKey && e.keyCode == '69') {
-                view.hidden = true;
+                divv.hidden = true;
                 area.hidden = false;
                 area.focus()
-                area.innerHTML = view.innerHTML;
+                area.innerHTML = divv.innerHTML;
                 return false;
             }
 
             if (e.ctrlKey && e.keyCode == '83') {
-                view.hidden = false;
+                divv.hidden = false;
                 area.hidden = true;
-                view.innerHTML = area.value;
+                divv.innerHTML = area.value;
                 return false;
             } else if (e.keyCode == '27') {
-                view.hidden = false;
+                divv.hidden = false;
                 area.hidden = true;
             }
         };
