@@ -7,16 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>плейсхолдер-подсказка</title>
     <style>
-        ::placeholder {
-            color: rgb(73, 73, 252);
+        body {
+            font-family: Verdana;
         }
+        .placeholder::-webkit-input-placeholder {
+            color: rgb(48, 62, 255);
+            font-family: Verdana;
+        }
+
     </style>
+
 </head>
 
 <body>
     <div id="texfield">
-        <label for="sss"></label>
-        <input type="text" data-placeholder="Введите логин" />
+        <label for="login"></label>
+        <input id="login" type="text" class='placeholder' data-placeholder="Введите логин">
     </div>
 
     <script>
